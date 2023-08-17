@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlyoutPage.Templates.FlyoutHeader">
+
+
+    <Grid RowDefinitions="*,40,40"
+          ColumnDefinitions="20,70,*">
+
+        <Image 
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.RowSpan="2"
+            Grid.ColumnSpan="3"
+            Source="headerflyout.png" />
+
+        <StackLayout
+            Grid.Column="1"
+            Grid.Row="1"
+            Grid.RowSpan="2"
+            VerticalOptions="CenterAndExpand">
+
+            <Frame
+                CornerRadius="20"
+                BackgroundColor="#eaeaea"
+                BorderColor="Black"
+                Margin="0"
+                Padding="0">
+                <ImageButton 
+                    Source="icon_profil.svg"
+                    WidthRequest="70"
+                    HeightRequest="70"/>
+            </Frame>
+
+        </StackLayout>
+       
+    </Grid>
+
+</ContentView>

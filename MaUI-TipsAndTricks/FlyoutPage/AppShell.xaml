@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="FlyoutPage.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:FlyoutPage"
+    xmlns:templates="clr-namespace:FlyoutPage.Templates"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    Shell.FlyoutBehavior="Flyout"
+    FlyoutBackground="#eaeaea"
+    Shell.FlyoutWidth="270">
+
+    <Shell.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="Black" StatusBarStyle="LightContent" />
+    </Shell.Behaviors>
+    
+    <Shell.FlyoutHeader>
+        <templates:FlyoutHeader />
+    </Shell.FlyoutHeader>
+
+    <Shell.FlyoutFooter>
+        <templates:FlyoutFooter />
+    </Shell.FlyoutFooter>
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+
+        <ShellContent
+        Title="Home"
+        Icon="icon_home.svg"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage">
+
+            <Shell.ItemTemplate>
+                <DataTemplate>
+                    <templates:FlyoutItem 
+                        Icon="icon_home"
+                        Title="Home"/>
+                </DataTemplate>
+            </Shell.ItemTemplate>
+
+        </ShellContent>
+
+        <ShellContent
+        Title="Note"
+        Icon="icon_note.svg"
+        ContentTemplate="{DataTemplate local:MainPage}">
+
+            <Shell.ItemTemplate>
+                <DataTemplate>
+                    <templates:FlyoutItem 
+                        Icon="icon_note"
+                        Title="Note"/>
+                </DataTemplate>
+            </Shell.ItemTemplate>
+
+        </ShellContent>
+
+        <ShellContent
+        Title="Task"
+        Icon="icon_task.svg"
+        ContentTemplate="{DataTemplate local:MainPage}" >
+
+        <Shell.ItemTemplate>
+            <DataTemplate>
+                <templates:FlyoutItem 
+                    Icon="icon_task"
+                    Title="Task"/>
+            </DataTemplate>
+        </Shell.ItemTemplate>
+
+        </ShellContent>
+
+    </FlyoutItem>
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+
+        <ShellContent
+        Title="Home"
+        Icon="icon_home.svg"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage">
+
+            <Shell.ItemTemplate>
+                <DataTemplate>
+                    <templates:FlyoutItem 
+                        Icon="icon_home"
+                        Title="Converter"/>
+                </DataTemplate>
+            </Shell.ItemTemplate>
+
+        </ShellContent>
+
+        <ShellContent
+        Title="Note"
+        Icon="icon_note.svg"
+        ContentTemplate="{DataTemplate local:MainPage}">
+
+            <Shell.ItemTemplate>
+                <DataTemplate>
+                    <templates:FlyoutItem 
+                        Icon="icon_note"
+                        Title="Chat"/>
+                </DataTemplate>
+            </Shell.ItemTemplate>
+
+        </ShellContent>
+
+        <ShellContent
+        Title="Task"
+        Icon="icon_task.svg"
+        ContentTemplate="{DataTemplate local:MainPage}" >
+
+            <Shell.ItemTemplate>
+                <DataTemplate>
+                    <templates:FlyoutItem 
+                    Icon="icon_task"
+                    Title="Video"/>
+                </DataTemplate>
+            </Shell.ItemTemplate>
+
+        </ShellContent>
+
+    </FlyoutItem>
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+
+        <ShellContent
+        Title="Home"
+        Icon="icon_home.svg"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage">
+
+            <Shell.ItemTemplate>
+                <DataTemplate>
+                    <templates:FlyoutItem 
+                        Icon="icon_home"
+                        Title="Settings"/>
+                </DataTemplate>
+            </Shell.ItemTemplate>
+
+        </ShellContent>
+
+        <ShellContent
+        Title="Note"
+        Icon="icon_note.svg"
+        ContentTemplate="{DataTemplate local:MainPage}">
+
+            <Shell.ItemTemplate>
+                <DataTemplate>
+                    <templates:FlyoutItem 
+                        Icon="icon_note"
+                        Title="Theme"/>
+                </DataTemplate>
+            </Shell.ItemTemplate>
+
+        </ShellContent>
+
+        <ShellContent
+        Title="Task"
+        Icon="icon_task.svg"
+        ContentTemplate="{DataTemplate local:MainPage}" >
+
+            <Shell.ItemTemplate>
+                <DataTemplate>
+                    <templates:FlyoutItem 
+                    Icon="icon_task"
+                    Title="Creator"/>
+                </DataTemplate>
+            </Shell.ItemTemplate>
+
+        </ShellContent>
+
+    </FlyoutItem>
+
+</Shell>
